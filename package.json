@@ -1,6 +1,6 @@
 {
   "name": "http-response-service",
-  "description": "Handles request for all HTTP 1.1 Verbs and Status codes."
+  "description": "Handles request for all HTTP 1.1 Verbs and Status codes.",
   "version": "0.0.1",
   "private": true,
   "scripts": {
