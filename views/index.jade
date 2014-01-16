@@ -1,0 +1,121 @@
+extends layout
+
+block content
+    h1 HTTP verb/status code testing service
+    p You can use these endpoints to test specific HTTP verb or status code responses.
+
+    div(id="status")
+        h2 Status Codes
+        h3 200s
+        ul
+            li 
+                a(href="200") /200
+            li 
+                a(href="201") /201
+            li 
+                a(href="201") /202
+            li 
+                a(href="203") /203
+            li 
+                a(href="204") /204
+            li 
+                a(href="205") /205
+            li 
+                a(href="206") /206
+        
+
+        h3 300s    
+        ul
+            li 
+                a(href="300") /300
+            li 
+                a(href="301") /301
+            li 
+                a(href="302") /302
+            li 
+                a(href="303") /303
+            li 
+                a(href="304") /304
+            li 
+                a(href="305") /305
+            li 
+                a(href="306") /306
+            li 
+                a(href="307") /307
+          
+
+        h3 400s  
+        ul
+            li 
+                a(href="400") /400
+            li 
+                a(href="401") /401
+            li 
+                a(href="402") /402
+            li 
+                a(href="403") /403
+            li 
+                a(href="404") /404
+            li 
+                a(href="405") /405
+            li 
+                a(href="406") /406
+            li 
+                a(href="407") /407
+            li 
+                a(href="408") /408
+            li 
+                a(href="409") /409
+            li 
+                a(href="410") /410
+            li 
+                a(href="411") /411
+            li 
+                a(href="412") /412
+            li 
+                a(href="413") /413
+            li 
+                a(href="414") /414
+            li 
+                a(href="415") /415
+            li 
+                a(href="416") /416
+            li 
+                a(href="417") /417
+          
+
+        h3 500s  
+        ul
+            li 
+                a(href="500") /500
+            li 
+                a(href="501") /501
+            li 
+                a(href="502") /502
+            li 
+                a(href="503") /503
+            li 
+                a(href="504") /504
+            li 
+                a(href="505") /505
+
+
+    div(id="verbs")
+        h2 Verbs
+        ul
+            li 
+                a(href="options") /options
+            li 
+                a(href="get") /get
+            li 
+                a(href="head") /head
+            li 
+                a(href="post") /post
+            li 
+                a(href="put") /put
+            li 
+                a(href="delete") /delete
+            li 
+                a(href="trace") /trace
+            li 
+                a(href="connect") /connect

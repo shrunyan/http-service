@@ -1,0 +1,11 @@
+extends layout
+
+block content
+
+	if noMatch
+
+		p Your path: <strong>#{req.path}</strong> and method: <strong>#{req.method}</strong> did not match.
+
+	else
+
+		p You successfully: <strong>#{req.method}</strong> at this url: <strong>#{req.path}</strong>
