@@ -8,12 +8,20 @@ _Running on port `3001` so it doesn't interfer with expressjs default port assig
 
 ## How To Use
 
-1. Start the server
+1. Check out and install dependencies
+	
+	`$ git clone https://github.com/shrunyan/http-service.git`
+	
+	`$ cd http-service`
+	
+	`$ npm install`
+
+2. Start the server
 
 	`$ node app.js`
 
-2. Make a request
+3. Make a request
 
 	`$ curl -X GET http://127.0.0.1:3001/200`
 
-3. Sit back and test.
+4. Sit back and test.
