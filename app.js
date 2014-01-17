@@ -30,8 +30,6 @@ app.configure('development', function(){
 // Add headers
 app.use(function (req, res, next) {
 
-  console.log(req);
-
   // Website you wish to allow to connect
   res.setHeader('Access-Control-Allow-Origin', '*');
 
@@ -57,11 +55,10 @@ app.use(function (req, res, next) {
  */
 app.use(function(req, res) {
 
-  //console.log(req);
+  console.log(req.params);
 
   if (req.path === '/') {
     res.render('index');
-    //res.send(200).send('OK');
   }
   routes.status(req, res);
   routes.verb(req, res);
