@@ -2,6 +2,8 @@ extends layout
 
 block content
 
+	a(href="/") <- back
+
 	if noMatch
 
 		p Your path: <strong>#{req.path}</strong> and method: <strong>#{req.method}</strong> did not match.

@@ -152,10 +152,19 @@ module.exports = {
 	 * @see http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html
 	 */
 	verb : function verb (req, res) {
+		/*var a = [1,2,3];
+		var o = {
+			"one": 1,
+			"two": 2,
+			"three": 3
+		};
+		var json = JSON.stringify(o);*/
+
 		if (req.path === '/options' && req.method === 'OPTIONS') {
 			res.render('verb', { req: req });
 		}
 		if (req.path === '/get' && req.method === 'GET') {
+			//res.status(200).send(json);
 			res.render('verb', { req: req });
 		}
 		if (req.path === '/head' && req.method === 'HEAD') {
