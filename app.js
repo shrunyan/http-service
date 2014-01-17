@@ -55,7 +55,9 @@ app.use(function (req, res, next) {
  */
 app.use(function(req, res) {
 
-  console.log(req.body);
+  //console.log(req.params);
+  console.log('GET data: ', req.query);
+  console.log('POST data: ', req.body);
 
   if (req.path === '/') {
     res.render('index');
