@@ -55,7 +55,7 @@ app.use(function (req, res, next) {
  */
 app.use(function(req, res) {
 
-  console.log(req.params);
+  console.log(req.body);
 
   if (req.path === '/') {
     res.render('index');
